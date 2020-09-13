@@ -1,0 +1,128 @@
+:root {
+  --color-main: blueviolet;
+  --font-size-header01: 2rem;
+  --padding-text: 0.5em 1em;
+  --padding-box01: 4vmin;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+header {
+  background-color: var(--color-main);
+  display: flex;
+  place-content: center;
+}
+.troll-face {
+  height: 3rem;
+  display: inline-block;
+  padding-right: 1rem;
+}
+.header {
+  color: #fff;
+  padding: var(--padding-text);
+  font-size: var(--font-size-header01);
+}
+.start-btn {
+  font-size: 3rem;
+  display: block;
+  margin: 1em auto;
+}
+main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f1f1f1;
+}
+.meme-form {
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+  grid-gap: 20px;
+  width: 60%;
+}
+.meme-form input {
+  padding: var(--padding-text);
+  border: none;
+  width: 100%;
+}
+.btn {
+  background: var(--color-main);
+  padding: var(--padding-text);
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.btn-on {
+  box-shadow: 0 0 10px var(--color-main);
+}
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 60%;
+  background: #fff;
+}
+.meme img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.meme h2 {
+  z-index: 1;
+  color: #fff;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000,
+    2px 2px 2px #000;
+  text-align: center;
+  padding: var(--padding-text);
+  text-transform: uppercase;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
